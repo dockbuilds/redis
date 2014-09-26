@@ -6,7 +6,7 @@
 
 #### Run `redis-server` with persistent data directory. (creates `dump.rdb`)
 
-    docker run -d -p 6379:6379 -v <data-dir>:/data --name redis dockbuilds/redis
+    docker run -d -p 6379:6379 -v <data-dir>:/data --name redis dockbuilds/redis redis-server /data/redis.conf
 
 #### Run `redis-cli`
 
